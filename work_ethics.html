@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work Ethics: An Interactive Infographic</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 350px;
+            max-height: 400px;
+        }
+
+        @media (min-width: 768px) {
+            .chart-container {
+                height: 400px;
+            }
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100 text-gray-800">
+
+    <div class="container mx-auto px-4 py-8 md:py-12">
+
+        <header class="text-center mb-12 md:mb-16">
+            <h1 class="text-4xl md:text-6xl font-bold text-[#005f73] mb-2">The Architecture of Work Ethics</h1>
+            <p class="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">An interactive exploration of the principles
+                that build a successful and respected professional career.</p>
+        </header>
+
+        <main class="space-y-12 md:space-y-20">
+
+            <section id="introduction" class="text-center">
+                <div class="max-w-4xl mx-auto bg-white p-8 rounded-xl shadow-lg border border-gray-200">
+                    <h2 class="text-3xl font-bold text-[#0a9396] mb-4">What is Work Ethic?</h2>
+                    <p class="text-lg text-gray-700 mb-6">
+                        A strong work ethic is not just about working hard. It's a foundational set of moral principles
+                        and standards that guide your behavior and beliefs in the workplace. It encompasses your
+                        attitude, sense of responsibility, and how you interact with colleagues, clients, and the
+                        company culture as a whole.
+                    </p>
+                    <blockquote class="border-l-4 border-[#ee9b00] pl-6 py-2 text-left">
+                        <p class="text-xl italic text-gray-800">"If wealth is lost nothing is lost; if health is lost
+                            something is lost; if character is lost everything is lost."</p>
+                        <footer class="mt-2 text-md text-gray-600">- M.K. Gandhi</footer>
+                    </blockquote>
+                </div>
+            </section>
+
+            <section id="pillars">
+                <div class="bg-white p-6 md:p-8 rounded-xl shadow-lg border border-gray-200">
+                    <h2 class="text-3xl font-bold text-center text-[#0a9396] mb-2">The 5 Pillars of a Strong Work Ethic
+                    </h2>
+                    <p class="text-center text-gray-600 mb-8 max-w-2xl mx-auto">These five behaviors are the most
+                        sought-after attributes in any professional. They form the bedrock of a reliable and respected
+                        employee, demonstrating a commitment to quality and integrity.</p>
+                    <div class="chart-container h-96 md:h-[500px] max-w-4xl">
+                        <canvas id="pillarsChart"></canvas>
+                    </div>
+                </div>
+            </section>
+
+            <section id="framework">
+                <div class="bg-white p-6 md:p-8 rounded-xl shadow-lg border border-gray-200">
+                    <h2 class="text-3xl font-bold text-center text-[#0a9396] mb-8">The Ethical Framework: Navigating
+                        Right and Wrong</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div class="bg-gray-50 p-6 rounded-lg border">
+                            <h3 class="text-2xl font-semibold text-[#005f73] mb-3">Moral Values</h3>
+                            <p class="text-gray-700">These are the personal standards of good and bad that govern our
+                                behavior. Largely shaped by our upbringing, society, and personal beliefs, they form our
+                                internal compass.</p>
+                        </div>
+                        <div class="bg-gray-50 p-6 rounded-lg border">
+                            <h3 class="text-2xl font-semibold text-[#005f73] mb-3">Ethics</h3>
+                            <p class="text-gray-700">Derived from the Greek "Ethos" (character), ethics are the
+                                external, shared principles that guide the conduct of a group or profession. They
+                                provide a structured set of rules for action.</p>
+                        </div>
+                    </div>
+                    <div class="mt-8">
+                        <h3 class="text-2xl font-semibold text-center text-[#005f73] mb-6">Classifying Professional
+                            Actions</h3>
+                        <div
+                            class="max-w-2xl mx-auto grid grid-cols-2 gap-0.5 bg-gray-300 border border-gray-300 rounded-lg overflow-hidden">
+                            <div class="bg-white p-4 text-center">
+                                <h4 class="font-bold text-green-600">Ethical & Legal</h4>
+                                <p class="text-sm text-gray-600">The ideal standard for all professional conduct.</p>
+                            </div>
+                            <div class="bg-white p-4 text-center">
+                                <h4 class="font-bold text-yellow-600">Unethical & Legal</h4>
+                                <p class="text-sm text-gray-600">Actions that are not illegal but violate moral or
+                                    professional standards.</p>
+                            </div>
+                            <div class="bg-white p-4 text-center">
+                                <h4 class="font-bold text-orange-600">Ethical & Illegal</h4>
+                                <p class="text-sm text-gray-600">Rare situations where a moral obligation may conflict
+                                    with the law.</p>
+                            </div>
+                            <div class="bg-white p-4 text-center">
+                                <h4 class="font-bold text-red-600">Unethical & Illegal</h4>
+                                <p class="text-sm text-gray-600">Clearly wrong and punishable by law and professional
+                                    bodies.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="decision-making">
+                <div class="bg-white p-6 md:p-8 rounded-xl shadow-lg border border-gray-200">
+                    <h2 class="text-3xl font-bold text-center text-[#0a9396] mb-8">The Anatomy of an Ethical Choice</h2>
+                    <p class="text-center text-gray-600 mb-10 max-w-2xl mx-auto">Every ethical decision involves a
+                        thought process. Understanding these three core factors helps ensure that your choices are
+                        sound, justifiable, and morally correct.</p>
+                    <div class="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-0">
+                        <div class="text-center p-6 bg-[#e9d8a6] text-[#ca6702] rounded-lg shadow-md w-60">
+                            <div class="text-4xl font-bold mb-2">1</div>
+                            <h3 class="text-xl font-semibold">Motive</h3>
+                            <p class="text-sm">The intention behind the action. Is it pure and honest?</p>
+                        </div>
+                        <div class="text-5xl text-[#94d2bd] transform md:rotate-0 rotate-90">&rarr;</div>
+                        <div class="text-center p-6 bg-[#94d2bd] text-[#005f73] rounded-lg shadow-md w-60">
+                            <div class="text-4xl font-bold mb-2">2</div>
+                            <h3 class="text-xl font-semibold">Means</h3>
+                            <p class="text-sm">The methods used to achieve the goal. Are they fair and just?</p>
+                        </div>
+                        <div class="text-5xl text-[#e9d8a6] transform md:rotate-0 rotate-90">&rarr;</div>
+                        <div class="text-center p-6 bg-[#ee9b00] text-white rounded-lg shadow-md w-60">
+                            <div class="text-4xl font-bold mb-2">3</div>
+                            <h3 class="text-xl font-semibold">Consequences</h3>
+                            <p class="text-sm">The results of the action. Do they create a net positive impact?</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="impact">
+                <div class="bg-white p-6 md:p-8 rounded-xl shadow-lg border border-gray-200">
+                    <h2 class="text-3xl font-bold text-center text-[#0a9396] mb-2">The Ripple Effect of Ethical
+                        Decisions</h2>
+                    <p class="text-center text-gray-600 mb-8 max-w-2xl mx-auto">A single ethical or unethical decision
+                        can have far-reaching consequences, impacting various stakeholders and aspects of the
+                        professional world.</p>
+                    <div class="chart-container">
+                        <canvas id="impactChart"></canvas>
+                    </div>
+                </div>
+            </section>
+
+            <section id="development">
+                <div class="bg-white p-6 md:p-8 rounded-xl shadow-lg border border-gray-200">
+                    <h2 class="text-3xl font-bold text-center text-[#0a9396] mb-2">Cultivating a Strong Work Ethic</h2>
+                    <p class="text-center text-gray-600 mb-8 max-w-2xl mx-auto">Developing a strong work ethic is an
+                        active process, built upon a foundation of key instrumental values that influence our attitudes
+                        and behaviors every day.</p>
+                    <div class="chart-container">
+                        <canvas id="valuesChart"></canvas>
+                    </div>
+                </div>
+            </section>
+
+            <footer class="text-center mt-12 md:mt-16 pt-8 border-t border-gray-300">
+                <h3 class="text-2xl font-bold text-[#005f73] mb-4">Conclusion: Character is Capital</h3>
+                <p class="text-lg text-gray-700 max-w-3xl mx-auto mb-6">A strong work ethic is more than a professional
+                    asset; it is a reflection of personal character. It is the combination of morals, values, and
+                    professional standards that builds trust, fosters growth, and defines a truly successful career.
+                </p>
+                <p class="text-lg font-semibold text-[#ca6702]">Cultivate integrity, responsibility, and discipline in
+                    your professional life.</p>
+            </footer>
+
+        </main>
+    </div>
+
+    <script>
+        const tooltipTitleCallback = (tooltipItems) => {
+            const item = tooltipItems[0];
+            let label = item.chart.data.labels[item.dataIndex];
+            if (Array.isArray(label)) {
+                return label.join(' ');
+            }
+            return label;
+        };
+
+        const wrapLabel = (label) => {
+            const maxLength = 16;
+            if (label.length <= maxLength) return label;
+
+            const words = label.split(' ');
+            const lines = [];
+            let currentLine = '';
+
+            words.forEach(word => {
+                if ((currentLine + word).length > maxLength) {
+                    lines.push(currentLine.trim());
+                    currentLine = '';
+                }
+                currentLine += word + ' ';
+            });
+            lines.push(currentLine.trim());
+            return lines;
+        };
+
+        const brilliantBlues = ['#005f73', '#0a9396', '#94d2bd', '#ee9b00', '#ca6702', '#bb3e03'];
+
+        const pillarsCtx = document.getElementById('pillarsChart').getContext('2d');
+        new Chart(pillarsCtx, {
+            type: 'bar',
+            data: {
+                labels: ['Integrity', 'Honesty', 'Discipline', 'Fairness & Respect', wrapLabel('Responsibility & Accountability')],
+                datasets: [{
+                    label: 'Importance Score (Illustrative)',
+                    data: [100, 95, 90, 92, 98],
+                    backgroundColor: brilliantBlues,
+                    borderColor: brilliantBlues.map(c => c + 'B3'),
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                indexAxis: 'y',
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    x: {
+                        beginAtZero: true,
+                        ticks: {
+                            display: false
+                        },
+                        grid: {
+                            display: false
+                        },
+                        border: {
+                            display: false
+                        }
+                    },
+                    y: {
+                        ticks: {
+                            font: {
+                                size: 14,
+                                weight: '600'
+                            },
+                            color: '#005f73'
+                        },
+                        grid: {
+                            display: false
+                        },
+                        border: {
+                            display: false
+                        }
+                    }
+                },
+                plugins: {
+                    legend: {
+                        display: false
+                    },
+                    tooltip: {
+                        callbacks: {
+                            title: tooltipTitleCallback
+                        }
+                    }
+                }
+            }
+        });
+
+        const impactCtx = document.getElementById('impactChart').getContext('2d');
+        new Chart(impactCtx, {
+            type: 'doughnut',
+            data: {
+                labels: ['Products & Services', 'The Company', 'The Public & Society', 'The Environment', 'The Profession', 'Personal Position'],
+                datasets: [{
+                    label: 'Area of Impact',
+                    data: [20, 20, 20, 15, 15, 10],
+                    backgroundColor: brilliantBlues,
+                    hoverOffset: 4
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: {
+                        position: 'bottom',
+                        labels: {
+                            font: {
+                                size: 12
+                            }
+                        }
+                    },
+                    tooltip: {
+                        callbacks: {
+                            title: tooltipTitleCallback
+                        }
+                    }
+                }
+            }
+        });
+
+        const valuesCtx = document.getElementById('valuesChart').getContext('2d');
+        new Chart(valuesCtx, {
+            type: 'radar',
+            data: {
+                labels: ['Honesty', 'Responsibility', 'Discipline', 'Integrity', 'Self-Control', 'Helpfulness'],
+                datasets: [{
+                    label: 'Personal Commitment',
+                    data: [8, 9, 7, 9, 8, 7],
+                    fill: true,
+                    backgroundColor: 'rgba(148, 210, 189, 0.4)',
+                    borderColor: '#0a9396',
+                    pointBackgroundColor: '#0a9396',
+                    pointBorderColor: '#fff',
+                    pointHoverBackgroundColor: '#fff',
+                    pointHoverBorderColor: '#0a9396'
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    r: {
+                        angleLines: {
+                            color: 'rgba(0, 95, 115, 0.2)'
+                        },
+                        grid: {
+                            color: 'rgba(0, 95, 115, 0.2)'
+                        },
+                        pointLabels: {
+                            font: {
+                                size: 14,
+                                weight: '600',
+                            },
+                            color: '#005f73'
+                        },
+                        ticks: {
+                            backdropColor: 'rgba(255, 255, 255, 0.75)',
+                            color: '#ca6702'
+                        }
+                    }
+                },
+                plugins: {
+                    legend: {
+                        display: false
+                    },
+                    tooltip: {
+                        callbacks: {
+                            title: tooltipTitleCallback
+                        }
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>
